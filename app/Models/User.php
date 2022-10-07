@@ -41,4 +41,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // (hasMany)1人のユーザーは複数の写真に紐付いている
+    public function photos()
+    {
+        return $this->hasMany(Photo::class);
+    }
 }
