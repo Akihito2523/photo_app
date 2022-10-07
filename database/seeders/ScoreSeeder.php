@@ -11,7 +11,8 @@ class ScoreSeeder extends Seeder {
      *
      * @return void
      */
-    public function run() {
+    public function run()
+    {
         if (!DB::table('scores')->first()) {
             DB::table('scores')->insert([
                 ['score' => 1],
