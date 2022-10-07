@@ -56,6 +56,7 @@ class PhotoController extends Controller
         $photo->user_id = Auth::user()->id;
         // 画像を取得
         $file = $request->file('image');
+
         $photo->image = self::createFileName($file);
 
         // トランザクション開始

@@ -23,7 +23,7 @@ class PhotoSeeder extends Seeder
                     'image' => '1.jpg',
                     'body' => '春は、寒い冬から気温が上がり始め、朝晩はまだ肌寒さがあるけれど、日中が次第に暖かくなる時期。',
                     'user_id' => 1,
-                    'score_id' => 1
+                    'score_id' => 5
                 ],
                 [
                     'id' => '2',
